@@ -2,7 +2,7 @@
   parent: BaseItem
   id: BatNT
   name: Tactical bat
-  decription: A bat made especially for important people. Well suited for repelling attacks.
+  description: A bat made especially for important people. Well suited for repelling attacks.
   components:
   - type: ItemToggle
     soundActivate:
