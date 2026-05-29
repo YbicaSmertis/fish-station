@@ -1,5 +1,0 @@
-- type: entity
-  id: SmallDisease
-  parent: BaseGameRule
-  components:
-  - type: SmallDiseaseRule
