@@ -1,0 +1,39 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-4.0",
+    "copyright": "tredariche",
+    "size": {
+        "x": 64,
+        "y": 64
+    },
+    "states": [
+        {
+            "name": "hypo",
+            "delays": [
+              [
+                0.10,
+                0.10,
+                0.10
+              ]
+            ]
+        },
+        {
+            "name": "hypo_fill1"
+        },
+        {
+            "name": "hypo_fill2"
+        },
+        {
+            "name": "hypo_fill3"
+        },
+        {
+            "name": "hypo_fill4"
+        },
+        {
+            "name": "hypo_fill5"
+        },
+        {
+            "name": "hypo_fill6"
+        }
+    ]
+}

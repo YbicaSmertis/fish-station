@@ -1,0 +1,60 @@
+- type: entity
+  id: BlueShieldHypospray
+  parent: [BaseHypospray, BaseCommandContraband]
+  name: X-00 hypospray
+  description: Adapted medical borg technology for use by humanoids. Made specifically for use by Blue Shield officers.
+  components:
+  - type: Sprite
+    sprite: _Fish/Objects/Specific/Medical/blueshieldhypospray.rsi
+    layers:
+    - state: hypo
+      map: ["enum.SolutionContainerLayers.Base"]
+      scale: 0.9,0.9
+    - state: hypo_fill1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+      scale: 0.9,0.9
+  - type: Item
+    sprite: Objects/Specific/Medical/hypospray.rsi
+    size: Normal
+    shape:
+    - 0,0,1,1
+  - type: SolutionContainerManager
+    solutions:
+      hypospray:
+        maxVol: 10
+  - type: UseDelay
+    delay: 1
+  - type: SolutionRegeneration
+    solution: hypospray
+    generated:
+      reagents:
+      - ReagentId: Bicaridine
+        Quantity: 0.25
+  - type: SolutionRegenerationSwitcher
+    options:
+    - ReagentId: Bicaridine
+      Quantity: 0.25
+    - ReagentId: Dermaline
+      Quantity: 0.25
+    - ReagentId: Dexalin
+      Quantity: 0.25
+    - ReagentId: Hyronalin
+      Quantity: 0.25
+    - ReagentId: Dylovene
+      Quantity: 0.25
+    - ReagentId: Tricordrazine
+      Quantity: 0.5
+  - type: SolutionContainerVisuals
+    maxFillLevels: 6
+    fillBaseName: hypo_fill
+    solutionName: hypospray
+  - type: RefillableSolution
+    solution: hypospray
+  - type: ExaminableSolution
+    solution: hypospray
+    exactVolume: true
+  - type: Injector
+    activeModeProtoId: HyposprayDynamicMode
+    allowedModes:
+    - HyposprayDynamicMode

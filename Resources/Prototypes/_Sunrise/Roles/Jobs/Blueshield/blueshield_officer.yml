@@ -56,6 +56,7 @@
     gloves: ClothingHandsGlovesCombat
   storage:
     back:
+    - BlueShieldHypospray #fish-edit
     # - HandheldBSOCrewMonitor
 
 - type: chameleonOutfit
