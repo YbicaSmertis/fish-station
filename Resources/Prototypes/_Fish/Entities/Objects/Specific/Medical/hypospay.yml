@@ -9,16 +9,12 @@
     layers:
     - state: hypo
       map: ["enum.SolutionContainerLayers.Base"]
-      scale: 0.9,0.9
     - state: hypo_fill1
       map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
-      scale: 0.9,0.9
   - type: Item
     sprite: Objects/Specific/Medical/hypospray.rsi
-    size: Normal
-    shape:
-    - 0,0,1,1
+    size: Small
   - type: SolutionContainerManager
     solutions:
       hypospray:
@@ -46,7 +42,7 @@
     - ReagentId: Tricordrazine
       Quantity: 0.5
   - type: SolutionContainerVisuals
-    maxFillLevels: 6
+    maxFillLevels: 5
     fillBaseName: hypo_fill
     solutionName: hypospray
   - type: RefillableSolution
